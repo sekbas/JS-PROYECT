@@ -1,0 +1,23 @@
+footer {
+    background-color: $secondarycolor;
+    padding: 20px;
+    width: auto;
+    justify-content: end;
+    margin-top: 300px;
+}
+.author {
+    margin-right: auto;
+    p {
+        font-family: 'Montserrat', sans-serif;
+        top: 8px;
+    }
+}
+.social-medias {
+    li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    img {
+        border-radius: 10px;
+    }
+}
+}

@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold !important;
+  color: white;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+header {
+  background-color: #202020;
+  height: 66px;
+  margin-bottom: 10px; }
+  header a {
+    text-decoration: none; }
+
+.topnav {
+  position: relative;
+  height: 100%;
+  grid-template: 66px / 160px 1fr; }
+
+.grid-container {
+  display: grid; }
+
+#fixtitl {
+  position: absolute; }
+  #fixtitl a img {
+    width: 141px;
+    height: 32px;
+    margin: 16px 0 0 10px; }
+
+.nav-links {
+  grid-column: 2 / 2;
+  grid-row: 1; }
+  .nav-links li {
+    display: inline-block;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out; }
+    .nav-links li:hover a {
+      color: #ffffff; }
+    .nav-links li:hover a::before {
+      visibility: visible;
+      transform: scale(1, 1); }
+    .nav-links li a {
+      color: white;
+      display: block;
+      padding: 0 7px 0 7px;
+      margin: 0 0 10px;
+      text-decoration: none;
+      position: relative;
+      margin-right: 25px; }
+      .nav-links li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: -10px;
+        left: 0px;
+        background-color: #ffffff;
+        transition: all 0.2s ease-in-out;
+        transform: scale(0, 0);
+        visibility: hidden; }
+
+.navbar--fix {
+  justify-content: end !important;
+  z-index: 3;
+  background-color: #202020;
+  border-radius: 5px; }
+
+body {
+  background-color: #323232; }
+
+.oferta {
+  position: relative;
+  justify-content: space-evenly;
+  flex-flow: row nowrap;
+  margin: 10px; }
+
+.flex-container {
+  display: flex; }
+
+.glow-on-hover {
+  width: 300px;
+  height: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px; }
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px; }
+  .glow-on-hover:active {
+    color: #000; }
+  .glow-on-hover:active:after {
+    background: transparent; }
+  .glow-on-hover:hover:before {
+    opacity: 1; }
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px; }
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 400% 0; }
+  100% {
+    background-position: 0 0; } }
+
+.hor, .cat {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; }
+
+.populated {
+  border: solid;
+  border-color: #1e1e1e;
+  width: 350px;
+  height: 470px;
+  border-radius: 10px;
+  margin: 0 35px 20px 35px; }
+  .populated a {
+    text-decoration: none; }
+
+.titulo-precio {
+  position: relative;
+  top: 330px;
+  left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; }
+
+.precio {
+  position: relative;
+  color: #5ca241;
+  top: 340px;
+  left: 20px;
+  font-family: 'Montserrat', sans-serif; }
+
+.btnanim {
+  color: #fff;
+  left: 10px;
+  top: 1.5em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; }
+
+.posbuy {
+  position: relative;
+  top: 350px;
+  left: 20px; }
+
+.btnbuy {
+  background-color: #7d7c7d;
+  border: none;
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 150px;
+  height: 32px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px; }
+  .btnbuy:hover {
+    opacity: 1; }
+
+.cuadro-productos {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin: 25px 0 0 23px; }
+
+.pos--flex {
+  position: relative;
+  font-size: 42.5px;
+  margin-top: 150px; }
+  .pos--flex h1 {
+    text-align: center; }
+  .pos--flex a {
+    text-decoration: none; }
+    .pos--flex a h3 {
+      width: 355px;
+      height: 32px; }
+
+#out-stock {
+  display: flex;
+  justify-content: center;
+  height: 700px; }
+  #out-stock img {
+    width: 345px;
+    height: 345px; }
+
+footer {
+  background-color: #202020;
+  padding: 20px;
+  width: auto;
+  justify-content: end;
+  margin-top: 300px; }
+
+.author {
+  margin-right: auto; }
+  .author p {
+    font-family: 'Montserrat', sans-serif;
+    top: 8px; }
+
+.social-medias li {
+  display: inline-block;
+  margin: 0 5px 0 0; }
+  .social-medias li img {
+    border-radius: 10px; }
+
+.hor, .cat {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; }
+
+.populated {
+  border: solid;
+  border-color: #1e1e1e;
+  width: 350px;
+  height: 470px;
+  border-radius: 10px;
+  margin: 0 35px 20px 35px; }
+  .populated a {
+    text-decoration: none; }
+
+.titulo-precio {
+  position: relative;
+  top: 330px;
+  left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px; }
+
+.precio {
+  position: relative;
+  color: #5ca241;
+  top: 340px;
+  left: 20px;
+  font-family: 'Montserrat', sans-serif; }
+
+.btnanim {
+  color: #fff;
+  left: 10px;
+  top: 1.5em;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; }
+
+.posbuy {
+  position: relative;
+  top: 350px;
+  left: 20px; }
+
+.btnbuy {
+  background-color: #7d7c7d;
+  border: none;
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 150px;
+  height: 32px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px; }
+  .btnbuy:hover {
+    opacity: 1; }
+
+.cuadro-productos {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin: 25px 0 0 23px; }
+
+.pos--flex {
+  position: relative;
+  font-size: 42.5px;
+  margin-top: 150px; }
+  .pos--flex h1 {
+    text-align: center; }
+  .pos--flex a {
+    text-decoration: none; }
+    .pos--flex a h3 {
+      width: 355px;
+      height: 32px; }
+
+#out-stock {
+  display: flex;
+  justify-content: center;
+  height: 700px; }
+  #out-stock img {
+    width: 345px;
+    height: 345px; }
+
+.titulo--categoria {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  position: absolute;
+  top: 100px;
+  left: 15px;
+  display: inline-block; }
+
+.subtitulo--categoria {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  position: relative;
+  right: 12px;
+  margin: 5px 0 10px 0;
+  font-weight: lighter; }
+
+.form--cat {
+  position: relative;
+  top: 90px;
+  left: 25px;
+  display: inline-block;
+  margin: 0 55px 95px 0; }
+
+.cat {
+  width: 95%;
+  margin-left: auto; }
+
+@media (max-width: 598px) {
+  #desk-links {
+    display: none; }
+  .button-fix-res {
+    font-size: 0.3rem; } }
+
+@media (min-width: 576px) {
+  .navbar {
+    display: none; } }
+
+@media (max-width: 1024px) {
+  .glow-on-hover {
+    width: 250px; } }
+
+@media (max-width: 768px) {
+  .glow-on-hover {
+    width: 150px; }
+  .button-fix-res {
+    font-size: 0.8rem; } }
+
+@media (max-width: 468px) {
+  .glow-on-hover {
+    width: 120px;
+    height: 70px; }
+  .button-fix-res {
+    font-size: 0.8rem; } }
+
+/* MAIN ARREGLA MEDIA */
+@media (max-width: 425px) {
+  .cuadro-productos {
+    width: 250px;
+    height: 250px;
+    margin: 25px 0 0 45px; }
+  .titulo-precio {
+    font-size: 1rem; }
+  .author {
+    font-size: 0.7rem; } }
+
+@media (max-width: 375px) {
+  .glow-on-hover {
+    width: 100px;
+    height: 50px; }
+  .button-fix-res {
+    font-size: 0.5rem; }
+  .cuadro-productos {
+    width: 200px;
+    height: 200px;
+    margin: 25px 0 0 50px; }
+  #out-stock img {
+    width: 320px;
+    height: 320px; }
+  #out-stock .btnbuy {
+    font-size: 1.3rem; }
+  .pos--flex a h3 {
+    width: 20rem;
+    height: 23px; }
+  .social-medias img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px; } }
+
+@media (max-width: 320px) {
+  .populated {
+    border: solid;
+    border-color: #1e1e1e;
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+    margin: 0 35px 20px 35px; }
+  .cuadro-productos {
+    width: 170px;
+    height: 170px;
+    margin: 95px 0 0 35px; }
+  .social-medias {
+    width: 90px;
+    height: 64px; }
+    .social-medias ul {
+      padding-left: 0; }
+  .author {
+    width: 150px;
+    height: 64px; } }
