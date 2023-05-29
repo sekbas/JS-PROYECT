@@ -109,8 +109,8 @@
                 </div>
                 <div class="flex-container details-buy">
                         <h2 class="titulo-precio">Grafica RTX 2080 Ti</h2>
-                        <span class="precio" id="precio1">$160.000,00</span>
-                        <button class="btnanim posbuy btnbuy" id="botonprod1">Comprar</button>
+                        <span class="precio" id="precio1">$160.000</span>
+                        <button class="btnanim posbuy btnbuy carrito-add" id="producto1">Comprar</button>
                     </a>
                 </div>
             </div>
@@ -118,16 +118,16 @@
                 <a>
                     <img src="./images/mouse.jpg" alt="Mouse Logitech G203" class="cuadro-productos">
                     <h2 class="titulo-precio">Mouse Logitech G203</h2>
-                    <span class="precio" id="precio2">$3.400,00</span>
-                    <button class="btnanim posbuy btnbuy"id="botonprod2">Comprar</button>
+                    <span class="precio" id="precio2">$3.400</span>
+                    <button class="btnanim posbuy btnbuy carrito-add" id="producto2">Comprar</button>
                 </a>
             </div>
             <div class="populated">
                 <a>
                     <img src="./images/monitor144.jpg" alt="Monitor LG 144hz" class="cuadro-productos">
                     <h2 class="titulo-precio">Monitor LG 144hz 1080p</h2>
-                    <span class="precio" id="precio3">$140.000,00</span>
-                    <h3 class="btnanim posbuy btnbuy"id="botonprod3">Comprar</h3>
+                    <span class="precio" id="precio3">$140.000</span>
+                    <h3 class="btnanim posbuy btnbuy carrito-add" id="producto3">Comprar</h3>
                 </a>
             </div>
             <div class="populated">
@@ -135,9 +135,19 @@
                     <img src="./images/auriculares-redragon-zeus-x.jpeg" alt="Auriculares Redragon Zeus X"
                         class="cuadro-productos">
                     <h2 class="titulo-precio">Auriculares Redragon Zeus X</h2>
-                    <span class="precio" id="precio4">$11.000,00</span>
-                    <button class="btnanim posbuy btnbuy" id="botonprod4">Comprar</button>
+                    <span class="precio" id="precio4">$11.000</span>
+                    <button class="btnanim posbuy btnbuy carrito-add" id="producto4">Comprar</button>
                 </a>
+            </div>
+        </div>
+        <div id="carrito">
+            <div id="carrito-top">
+                <h2>Listado de Compra</h2>
+                <ul id="carrito-lista"></ul>
+            </div>
+            <div id="carrito-prods">
+                <button class="btnanim btnbuy" id="carrito-clear">Vaciar Carrito</button>
+                <span>Total: $<span id="carrito-total">0</span></span>
             </div>
         </div>
     </main>
