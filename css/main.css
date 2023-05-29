@@ -335,6 +335,39 @@ footer {
 .cat {
   width: 95%;
   margin-left: auto; }
+#carrito-clear{
+  font-size: 20px;
+}
+#carrito {
+  display: flex;
+  flex-wrap: wrap;
+  border: solid;
+    border-color: #1e1e1e;
+    height: 450px;
+    border-radius: 10px;
+    margin: 0 35px 20px 35px; }
+#carrito h2 {
+  position: relative;
+  left:20px;
+  top: 10px;
+}
+#carrito-prods {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 100%;
+
+}
+#carrito-prods button {
+  margin: 5px;
+}
+#carrito-prods span {
+  margin: 5px;
+}
+#carrito-top ul {
+  position: relative;
+  top: 15px;
+}
 
 @media (max-width: 598px) {
   #desk-links {
