@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una página de venta en el mercado del Gaming, adentraté a este mundo">
+    <meta name="keywords" content="Graficas, Procesadores, Ram, Memorias Ram, Pc gamers">
+    <title>UTech</title>
+    <link rel="shortcut icon" href="./images/utech_logo-32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- para hacer comentarios alt shift a -->
+    <header>
+        <div class="topnav grid-container">
+            <span id="fixtitl"><a href="./index.html"><img src="./images/utech-01.png" alt=""></a></span>
+            <ul class="nav-links" id="desk-links">
+                <li><a href="./pages/graficas.html" class="btnanim">Graficas</a></li>
+                <li><a href="./pages/perifericos.html" class="btnanim">Perifericos</a></li>
+                <li><a href="./pages/monitores.html" class="btnanim">Monitores</a></li>
+            </ul>
+            <nav class="navbar navbar-expand-sm navbar-dark nav-links">
+                <div class="container-fluid navbar--fix">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/graficas.html">Graficas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/perifericos.html">Perifericos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/monitores.html">Monitores</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/asusbanner3.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/asusbanner2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/asusbanner.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <section id="tapa_oferta">
+            <div class="oferta flex-container">
+
+                <div>
+                    <a href="./pages/graficas.html">
+                        <button class="glow-on-hover">
+                            <h5 class="button-fix-res">Graficas Ofertas!</h5>
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/perifericos.html">
+                        <button class="glow-on-hover">
+                            <h5 class="button-fix-res">Perifericos Ofertas!</h5>
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <a href="./pages/monitores.html">
+                        <button class="glow-on-hover">
+                            <h5 class="button-fix-res">Monitores Ofertas!</h5>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="flex-container hor">
+            <div class="populated">
+                <div class="flex-container">
+                    <a id="pd-1">
+                        <img src="./images/grafica.jpeg" alt="Grafica GTX 1060" class="cuadro-productos">
+                </div>
+                <div class="flex-container details-buy">
+                        <h2 class="titulo-precio">Grafica RTX 2080 Ti</h2>
+                        <span class="precio" id="precio1">$160.000</span>
+                        <button class="btnanim posbuy btnbuy carrito-add" id="producto1">Comprar</button>
+                    </a>
+                </div>
+            </div>
+            <div class="populated">
+                <a>
+                    <img src="./images/mouse.jpg" alt="Mouse Logitech G203" class="cuadro-productos">
+                    <h2 class="titulo-precio">Mouse Logitech G203</h2>
+                    <span class="precio" id="precio2">$3.400</span>
+                    <button class="btnanim posbuy btnbuy carrito-add" id="producto2">Comprar</button>
+                </a>
+            </div>
+            <div class="populated">
+                <a>
+                    <img src="./images/monitor144.jpg" alt="Monitor LG 144hz" class="cuadro-productos">
+                    <h2 class="titulo-precio">Monitor LG 144hz 1080p</h2>
+                    <span class="precio" id="precio3">$140.000</span>
+                    <h3 class="btnanim posbuy btnbuy carrito-add" id="producto3">Comprar</h3>
+                </a>
+            </div>
+            <div class="populated">
+                <a>
+                    <img src="./images/auriculares-redragon-zeus-x.jpeg" alt="Auriculares Redragon Zeus X"
+                        class="cuadro-productos">
+                    <h2 class="titulo-precio">Auriculares Redragon Zeus X</h2>
+                    <span class="precio" id="precio4">$11.000</span>
+                    <button class="btnanim posbuy btnbuy carrito-add" id="producto4">Comprar</button>
+                </a>
+            </div>
+        </div>
+        <div id="carrito">
+            <div id="carrito-top">
+                <h2>Listado de Compra</h2>
+                <ul id="carrito-lista"></ul>
+            </div>
+            <div id="carrito-prods">
+                <button class="btnanim btnbuy" id="carrito-clear">Vaciar Carrito</button>
+                <span>Total: $<span id="carrito-total">0</span></span>
+            </div>
+        </div>
+    </main>
+    <footer class="flex-container">
+        <div class="author">
+            <p>UTECH|Todos los derechos reservados</p>
+        </div>
+        <div class="social-medias">
+            <ul>
+                <li><a href=""><img src="./images/whatsapp.png" alt=""></a></li>
+                <li><a href=""><img src="./images/instagram.png" alt=""></a></li>
+                <li><a href=""><img src="./images/facebook.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+    </script>
+    <script src="./scripts/scripts.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

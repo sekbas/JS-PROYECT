@@ -1,0 +1,24 @@
+{
+    "productos": [
+      {
+        "nombre": "Grafica RTX 2080 Ti",
+        "precio": 160000,
+        "id": "producto1"
+      },
+      {
+        "nombre": "Mouse Logitech G203",
+        "precio": 3400,
+        "id": "producto2"
+      },
+      {
+        "nombre": "Monitor LG 144hz 1080p",
+        "precio": 140000,
+        "id": "producto3"
+      },
+      {
+        "nombre": "Auriculares Redragon Zeus X",
+        "precio": 11000,
+        "id": "producto4"
+      }
+    ]
+  }

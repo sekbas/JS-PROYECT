@@ -1,0 +1,101 @@
+@import "variables.scss";
+
+.hor {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.populated {
+    border: solid;
+    border-color: #1e1e1e;
+    width: 350px;
+    height: 470px;
+    border-radius: 10px;
+    margin: 0 35px 20px 35px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.titulo-precio {
+    position: relative;
+    top: 330px;
+    left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.precio {
+    position: relative;
+    color: #5ca241;
+    top: 340px;
+    left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btnanim {
+    color: #fff;
+    left: 10px;
+    top: 1.5em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.posbuy {
+    position: relative;
+    top: 350px;
+    left: 20px;
+}
+
+.btnbuy {
+    background-color: rgb(125, 124, 125);
+    border: none;
+    opacity: 0.6;
+    transition: 0.3s;
+    width: 150px;
+    height: 32px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.cuadro-productos {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: 25px 0 0 23px;
+}
+
+.pos--flex {
+    position: relative;
+    font-size: 42.5px;
+    margin-top: 150px;
+
+    h1 {
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        h3 {
+            width: 355px;
+            height: 32px;
+        }
+
+    }
+}
+#out-stock {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    img {
+        width: 345px;
+        height: 345px;
+    }
+}

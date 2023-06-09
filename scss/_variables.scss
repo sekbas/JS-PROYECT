@@ -1,0 +1,9 @@
+$primarycolor: #323232;
+$secondarycolor: #202020;
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+.cat {
+    @extend .hor;
+}
